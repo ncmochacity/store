@@ -111,7 +111,8 @@ input[type="submit"]{
 	font-weight:400;
 	font-family: 'Roboto',sans-serif;
 	font-size: 1.2em;
-	color:#fff;
+	color:#000;
+        border:2px solid #fff;
 }
 #sidebar p, #product p{
 	font-family: 'Roboto',sans-serif;

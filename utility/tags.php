@@ -1,7 +1,5 @@
 <?php
 
-global $add_tags, $text, $paragraphs, $p;
-
 function add_tags($text) {
     $text = str_replace("\r\n", "\n", $text);
     //convert windows

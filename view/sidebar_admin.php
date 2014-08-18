@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-
+<div class="row">
     
       <div class="large-5 columns" id="sidebar">
       	<h1>Links</h1>
