@@ -1,5 +1,5 @@
 <?php include '../utility/main.php'; ?>
-<?php include '../utility/tags.php'; ?>
+<?php include_once '../utility/tags.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

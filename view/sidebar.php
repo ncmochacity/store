@@ -1,5 +1,5 @@
-<?php include 'header.php'; ?>
 
+<?php include '../view/header.php'; ?>
 <div class="row">
       <div class="large-5 columns" id="sidebar">
       	<h1>Links</h1>
@@ -10,7 +10,7 @@
             <li>
                 <a href="<?php echo $app_path; ?>">Admin</a>
             </li>
-            <h3>Categories</h3>
+            <h1>Categories</h1>
             <?php foreach($categories as $category) : ?>
             <li>
                 <a href="<?php echo $app_path . 'catalog?action=list_products'
@@ -21,7 +21,6 @@
             <?php endforeach; ?>
       	</ul>
       </div>
-</div>
 
-<?php include 'footer.php'; ?>
+
 

@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+
 <?php
     $category_id=$product['categoryID'];
     $product_code=$product['productCode'];
@@ -14,17 +14,17 @@
     $discount_amount=number_format($discount_amount, 2);
     $unit_price=  number_format($unit_price, 2);
     $image_filename=$product_code . '.png';
-    $image_path=$app_path . '../images/' . $image_filename;
+    $image_path=$app_path . '/images/' . $image_filename;
     $image_alt='Image filename: ' . $image_filename;
 ;?>
 <h1><?php echo $product_name; ?></h1>
 <div class="row" >
-    <div class="large-5 columns" id="sidebar">
+    <div class="large-6 columns" id="watches">
         <p><img src="<?php echo $image_path; ?>"
                 alt="<?php echo $image_alt; ?>" />
         </p>
     </div>
-    <div class="large-7 columns" id="list">
+    <div class="large-6 columns" id="product">
         <p>List Price:
             <?php echo '$' . $list_price; ?>
         </p>
@@ -48,4 +48,3 @@
         <?php echo $description; ?>
     </div>
 </div>
-<?php include 'footer.php'; ?>
