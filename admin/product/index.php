@@ -17,10 +17,10 @@ if (isset($_POST['action'])) {
 $action = strtolower($action);
 switch ($action) {
     case 'list_products':
-        $category_id = 1;
-        if (isset($_GET['category_id'])) {
-            $category_id = $_GET['category_id'];
-        }
+        $category_id=$_GET['category_id'];
+		if(!isset($category_id)){
+			$category_id=1;
+		}
         $category_name = get_category_name($category_id);
         $categories = get_categories();
         $products = get_products_by_category($category_id);

@@ -26,16 +26,27 @@
                 $product=$product->fetch();
                 return $product;
 	}
-	function add_product($category_id, $code, $name,$description, $price,$discount_percent){
+	function add_product($category_id, $code, $name,$description, $price){
 		global $db;
 		$query="INSERT INTO products 
-				(productID,categoryID, productCode, productName,description, listPrice
-                                ,discountPercent, dateAdded)
+				(categoryID, productCode, productName,description, listPrice
+                                )
 				VALUES 
-					('$category_id','$code', '$name', '$description', $price','$disount_percent', NOW()";
+					('$category_id','$code', '$name', '$description', '$price')";
                 
 		$db->exec($query);//returns the count after add statement
 	}
-        
+        function update_product($category_id, $code, $name, $description, $price){
+            global $db;
+            $query="UPDATE products
+                    SET categoryID=$category_id,
+                        productCode=$code,
+                        description=$description,
+                        listPrice=$price,
+                        productName=$name
+                  
+                    WHERE productID='$productID'";
+            $db->exec($query);
+        }
         
 ?>

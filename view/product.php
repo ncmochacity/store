@@ -45,6 +45,7 @@
             <input type="submit" value="Add to Cart" id="submit-btn" />
         </form>
         <h2>Description</h2>
-        <?php echo $description; ?>
+        <br />
+        <p><?php echo $description; ?></p>
     
 </div>

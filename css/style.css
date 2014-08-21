@@ -7,7 +7,7 @@ body{
 p{
 	font-family: "Roboto",sans-serif;
 	font-weight: 300;
-	font-size: 1.2em;
+	font-size: 1em;
 
 }
 
@@ -97,7 +97,7 @@ img{
 	background: #dfdfdf;
 	margin-top: 50px;
 	padding-bottom: 20px;
-	padding-right: 50px;
+	padding-right: 20px;
 }
 input[type="text"]{
 	margin-right: 50px;
@@ -115,10 +115,10 @@ input[type="submit"]{
         border:2px solid #fff;
 }
 #sidebar p, #product p{
-	font-family: 'Roboto',sans-serif;
-	font-weight: 100;
-	font-size: 2em;
-	color:#666;
+	font-family: 'Open Sans',sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	color:#333;
 	padding:0 20px 0 20px;
 }
 #product p.quant{
@@ -248,6 +248,17 @@ ul.nav li a{
 	font-weight: 100;
 	text-align: center;
 	margin:0 auto;
+}
+#submit-newbtn{
+    width:100px;
+    background-color:#66cccc;
+    color:#fff;
+    font-size:0.9em;
+    display:block;
+    height:40px;
+    font-weight:100;
+    text-align: center;
+    margin-left: 50px;
 }
 #contact #submit-btn:hover{
 	background-color: #333;
