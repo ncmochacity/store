@@ -46,5 +46,5 @@
         </form>
         <h2>Description</h2>
         <?php echo $description; ?>
-    </div>
+    
 </div>

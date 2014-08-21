@@ -1,4 +1,4 @@
-<?php include '../view/header.php'; ?>
+<?php include dirname(__FILE__) . './../view/header.php'; ?>
 <div class="row" >
       <div class="large-7 columns" id="list">
         <h2><?php echo $category_name; ?></h2>
@@ -35,6 +35,5 @@
       	</ul>
       </div>
 </div>
-<?php include '../view/footer.php'; ?>
     
-
+<?php include dirname(__FILE__) . './../view/footer.php'; ?>

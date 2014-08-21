@@ -7,9 +7,9 @@
 	</div>
 </div>
 
-    <script src="../js/vendor/modernizr.js"></script>
-    <script src="../js/vendor/jquery.js"></script>
-    <script src="../js/foundation.min.js"></script>
+    <script src="<?php echo $app_path ?>js/vendor/modernizr.js"></script>
+    <script src="<?php echo $app_path ?>js/vendor/jquery.js"></script>
+    <script src="<?php echo $app_path ?>js/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script>

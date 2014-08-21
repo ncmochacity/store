@@ -7,7 +7,7 @@
 		ORDER BY productID";
 
 		$products=$db->query($query);
-		return $products;
+                return $products;
 	}
 
 	function get_product($product_id){
@@ -15,22 +15,27 @@
 		$query="SELECT * FROM products 
 				WHERE productID='$product_id'";
 		$product=$db->query($query);
-		$product=$product->fetch();
-		return $product;
+                $product=$product->fetch();
+                return $product;
 	}
 	function delete_product($product_id){
 		global $db;
 		$query="DELETE FROM products 
 				WHERE productID='$product_id'";
-		$db->exec($query);//returns deleted item as count after delete statement
+		$product=$db->query($query);
+                $product=$product->fetch();
+                return $product;
 	}
-	function add_product($category_id, $code, $name, $price){
+	function add_product($category_id, $code, $name,$description, $price,$discount_percent){
 		global $db;
 		$query="INSERT INTO products 
-				(productID,categoryID, productCode, productName, listPrice)
+				(productID,categoryID, productCode, productName,description, listPrice
+                                ,discountPercent, dateAdded)
 				VALUES 
-					('$product_id',$category_id', '$code', '$name', '$price')";
+					('$category_id','$code', '$name', '$description', $price','$disount_percent', NOW()";
+                
 		$db->exec($query);//returns the count after add statement
 	}
-
+        
+        
 ?>
